@@ -48,6 +48,6 @@ Occurs when a player draws a block.
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
 | `0`  | `Integer`   | Id                 | The player's id.
-| `1`  | `Integer`   | Block Info         | Contains layer, x and y placement.
+| `1`  | `Integer`   | Block Info         | [Contains layer, x and y placement.](https://pastebin.com/x9Sf9dwa)
 | `2`  | `Integer`   | Block Id           | The placed block id.
 | `..` | `Integer`   | Rotation           | The rotation of the block.
