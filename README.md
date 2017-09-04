@@ -47,7 +47,7 @@ Occurs whenever a player changes their avatar.
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
-| `0`  | `Integer`   | Id                 | The player's id.
+| `0`  | `Integer`   | Player Id          | The player’s unique ID.
 | `1`  | `Integer`   | Avatar             | The player’s new Avatar data.
 
 ### #b
@@ -60,7 +60,13 @@ Occurs when a player draws a block.
 | `2`  | `Integer`   | Block Id           | The placed block id.
 | `..` | `Integer`   | Arguments          | The arguments of the block.
 
+### #say
+Occurs whenever a player sends a chat message.
 
+| Id   | Type        | Name               | Description
+| ---  | ---         | ----               | -----------
+| `0`  | `Integer`   | Player Id          | The player’s unique ID.
+| `1`  | `String`    | Message            | The message sent from the player.
 
 ### Staff Rank
 | Id   | Type
@@ -70,4 +76,14 @@ Occurs when a player draws a block.
 | `1`  | Moderator
 | `2`  | Developer
 | `3`  | Administrator
+
+
+### Avatar ID's
+| Id   | Type
+| ---  | ---
+| `0`  | Not done.
+| `0`  | Not done.
+| `0`  | Not done.
+| `0`  | Not done.
+| `0`  | Not done.
 
