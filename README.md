@@ -18,14 +18,28 @@ RoomType: Simple-2
 | Green       | OR_Green
 | Blue        | OR_Blue
 
+### #world
+The state of the world that is sent when you just join, the world is cleared or the level is reloaded from the database.
 
-### #say
-Occurs when a player sends a chat message.
+| Id   | Type        | Name               | Description
+| ---  | ---         | ----               | -----------
+| `0`  | `String`    | Owner ID           | The owner’s account ID.
+| `1`  | `String`    | Title              | The title of the world.
+| `2`  | `Integer`   | Width              | The width of the world.
+| `3`  | `Integer`   | Height             | The height of the world.
+| `4`  | `String`    | WS                 | Indicates the START of world serialization.
+| `5`  | `Boolean`   | IsCleared          | Whether or not the client should clear the world before the new blocks are there.
+| `6`  | `Integer`   | Layer              | The layer of the block.
+| `7`  | `Integer`   | Block ID           | The ID of the block.
+| `8`  | `Byte[]`    | X                  | All the X values of this block.
+| `9`  | `Byte[]`    | Y                  | All the Y values of this block.
+| `..` | `..`        | Arguments          | The arguments of the block (if any).
+| `..` | `..`        | `..`               | Repeated for each block in the world.
+| `..` | `String`    | WE                 | Indicates the END of world serialization.
+| `..` | `String`    | SS                 | Indicates the START of signal information.
+| `..` | `Integer`   | Open Channel       | The ID of a channel that is open.
+| `..` | `String`    | SE                 | Indicates the END of signal information.
 
-| Id  | Type      | Name      | Description
-| --- | ----      | ----      | -----------
-| `0` | `Integer` | Player Id | The player's id.
-| `1` | `String`  | Text      | The chat message text.
 
 ### #online
 This contains everyone who joined the level before you.
