@@ -36,10 +36,10 @@ This contains everyone who joined the level before you.
 | `1`  | `String`    | Account ID         | The player’s account ID.
 | `2`  | `String`    | Nickname           | The player's nickname.
 | `3`  | `Boolean`   | Edit Rights        | Whether the player has editing rights.
-| `4`  | `Uint`      | idk                | idk
-| `5`  | `Integer`   | idk                | idk
-| `6`  | `Single`    | X                  | The player's X position.
-| `7`  | `Single`    | Y                  | The player's Y position.
+| `4`  | `Uint`      | Avatar ID          | The customization of the avatar.
+| `5`  | `Integer`   | Staff Rank         | The staff rank ID of the player. (-1 if not staff)
+| `6`  | `Float`     | X                  | The player's X position.
+| `7`  | `Float`     | Y                  | The player's Y position.
 | `..` | `..`        | `..`               | Contains more users from 0 to 7 again.
 
 ### #avatar
@@ -48,7 +48,7 @@ Occurs whenever a player changes their avatar.
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
 | `0`  | `Integer`   | Id                 | The player's id.
-| `1`  | `Integer`   | Avatar             | The players avatar.
+| `1`  | `Integer`   | Avatar             | The player’s new Avatar data.
 
 ### #b
 Occurs when a player draws a block.
@@ -59,3 +59,15 @@ Occurs when a player draws a block.
 | `1`  | `Integer`   | Block Info         | [Contains layer, x and y placement.](https://pastebin.com/x9Sf9dwa)
 | `2`  | `Integer`   | Block Id           | The placed block id.
 | `..` | `Integer`   | Arguments          | The arguments of the block.
+
+
+
+### Staff Rank
+| Id   | Type
+| ---  | ---
+| `-1` | None
+| `0`  | Unknown
+| `1`  | Moderator
+| `2`  | Developer
+| `3`  | Administrator
+
