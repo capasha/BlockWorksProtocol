@@ -5,18 +5,18 @@ Protocol for BlockWorks that use PlayerIO's API.
 ### #Game and Room Information  
 ```
 ID: blockworks-frdrlhtjneoipehnx9tmg  
-Version: 2  
-RoomType: Simple-2  
+Version: 1  
+RoomType: Simple-1  
 ```
 ### #Rooms
 
 | Type        | Room Id
 | ----        | ---------
-| Gray        | OR_Gray
-| Red         | OR_Red
-| Yellow      | OR_Yellow
-| Green       | OR_Green
-| Blue        | OR_Blue
+| Gray        | OW_Gray-{version}
+| Red         | OW_Red-{version}
+| Yellow      | OW_Yellow-{version}
+| Green       | OW_Green-{version}
+| Blue        | OW_Blue-{version}
 
 ### #world
 The state of the world that is sent when you just join, the world is cleared or the level is reloaded from the database.
