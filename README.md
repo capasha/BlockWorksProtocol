@@ -28,14 +28,14 @@ Occurs when a player sends a chat message.
 | `1` | `String`  | Text      | The chat message text.
 
 ### online
-Occurs when you join a world and there contains players in the world.
+This contains everyone who joined the level before you.
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
-| `0`  | `Integer`   | Id                 | The player's id.
-| `1`  | `String`    | idk                | The player's derp
+| `0`  | `Integer`   | Player ID          | The player’s unique ID.
+| `1`  | `String`    | Account ID         | The player’s account ID.
 | `2`  | `String`    | Nickname           | The player's nickname.
-| `3`  | `Boolean`   | idk                | idk
+| `3`  | `Boolean`   | idk                | Whether the player has editing rights.
 | `4`  | `Uint`      | idk                | idk
 | `5`  | `Integer`   | idk                | idk
 | `6`  | `Single`    | X                  | The player's X position.
