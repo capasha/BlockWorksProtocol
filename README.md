@@ -21,7 +21,7 @@ RoomType: Simple-1
 
 # Messages from the game
 
-### # world
+### # "world"
 The state of the world that is sent when you just join, the world is cleared or the level is reloaded from the database.
 
 | Id   | Type        | Name               | Description
@@ -45,7 +45,7 @@ The state of the world that is sent when you just join, the world is cleared or 
 
 [Read World data between WS and WE](https://pastebin.com/TKFq7k6S)
 
-### # online
+### # "online"
 This contains everyone who joined the level before you.
 
 | Id   | Type        | Name               | Description
@@ -60,7 +60,7 @@ This contains everyone who joined the level before you.
 | `7`  | `Float`     | Y                  | The player's Y position.
 | `..` | `..`        | `..`               | Contains more users from 0 to 7 again.
 
-### # you
+### # "you"
 Your data when you first join the world.
 
 | Id   | Type        | Name               | Description
@@ -74,7 +74,7 @@ Your data when you first join the world.
 | `6`  | `Float`     | X                  | Your X position.
 | `7`  | `Float`     | Y                  | Your Y position.
 
-### # avatar
+### # "avatar"
 Occurs whenever a player changes their avatar.
 
 | Id   | Type        | Name               | Description
@@ -82,7 +82,15 @@ Occurs whenever a player changes their avatar.
 | `0`  | `Integer`   | Player Id          | The player’s unique ID.
 | `1`  | `Integer`   | Avatar Id          | The player’s new Avatar data.
 
-### # b
+### # "fly"
+Occurs whenever a player toggles free-fly mode.
+
+| Id   | Type        | Name               | Description
+| ---  | ---         | ----               | -----------
+| `0`  | `Integer`   | Player Id          | The player’s unique ID.
+| `1`  | `Boolean`   | Is Flying          | Whether or not if the player is flying.
+
+### # "b"
 Occurs when a player draws a block.
 
 | Id   | Type        | Name               | Description
@@ -92,7 +100,7 @@ Occurs when a player draws a block.
 | `2`  | `Integer`   | Block Id           | The placed block id.
 | `..` | `Integer`   | Arguments          | The arguments of the block.
 
-### # say
+### # "say"
 Occurs whenever a player sends a chat message.
 
 | Id   | Type        | Name               | Description
