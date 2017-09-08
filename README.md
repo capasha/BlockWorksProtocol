@@ -104,11 +104,12 @@ Occurs whenever a player sends a chat message.
 | ![AvatarPurple](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/purple.png) | `6`
 
 ### Faces Avatar ID's
-| Color | Id
+| Face | Id
 | ---   | ---
 | ![Avatar0](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/0.png) | `0`
 | ![Avatar1](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/1.png) | `1`
 | ![Avatar2](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/2.png) | `2`
 | ![Avatar3](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/3.png) | `3`
 | ![Avatar4](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/4.png) | `4`
+| ![Avatar5](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/5.png) | `5`
 
