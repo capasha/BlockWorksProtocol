@@ -19,6 +19,8 @@ RoomType: Simple-1
 | Blue        | OW_Blue-{version}
 | Test World  | OW_Test-{version}
 
+# Messages from the game
+
 ### # world
 The state of the world that is sent when you just join, the world is cleared or the level is reloaded from the database.
 
@@ -97,6 +99,9 @@ Occurs whenever a player sends a chat message.
 | ---  | ---         | ----               | -----------
 | `0`  | `Integer`   | Player Id          | The player’s unique ID.
 | `1`  | `String`    | Message            | The message sent from the player.
+
+# Send messages
+
 
 
 # Misc
