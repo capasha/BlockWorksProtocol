@@ -103,6 +103,15 @@ Occurs whenever a player changes their avatar.
 | `0`  | `Integer`   | Player Id          | The player’s unique ID.
 | `1`  | `Integer`   | Avatar Id          | The player’s new Avatar data.
 
+### # "s"
+Occurs when the channel state is changed.
+
+| Id   | Type        | Name               | Description
+| ---  | ---         | ----               | -----------
+| `0`  | `Uint`      | Data               | [Contains X, Y and Channel](https://pastebin.com/x9Sf9dwa)
+| `1`  | `Integer`   | Channel Id         | The ID of the channel
+| `2`  | `Boolean`   | Is open            | Whether or not the channel state is open.
+
 ### # "fly"
 Occurs whenever a player toggles free-fly mode.
 
@@ -117,7 +126,7 @@ Occurs when a player draws a block.
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
 | `0`  | `Integer`   | Player Id          | The player’s unique ID.
-| `1`  | `Integer`   | Block Info         | [Contains layer, x and y placement.](https://pastebin.com/x9Sf9dwa)
+| `1`  | `Integer`   | Block Info         | [Contains X, Y and Channel](https://pastebin.com/x9Sf9dwa)
 | `2`  | `Integer`   | Block Id           | The placed block id.
 | `..` | `Integer`   | Arguments          | The arguments of the block.
 
@@ -155,6 +164,12 @@ Occurs whenever a player sends a chat message.
 | `1`  | Moderator
 | `2`  | Developer
 | `3`  | Administrator
+
+### Channel Types
+| Id   | Type
+| ---  | ---
+| `0`  | Switch
+| `1`  | Button
 
 
 ### Avatar ID's
