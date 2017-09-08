@@ -40,7 +40,7 @@ The state of the world that is sent when you just join, the world is cleared or 
 | `..` | `String`    | SS                 | Indicates the START of signal information.
 | `..` | `Integer`   | Open Channel       | The ID of a channel that is open.
 | `..` | `String`    | SE                 | Indicates the END of signal information.
-
+[Read World data between WS and WE](https://pastebin.com/TKFq7k6S)
 
 ### # online
 This contains everyone who joined the level before you.
