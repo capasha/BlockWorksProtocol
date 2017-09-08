@@ -111,5 +111,4 @@ Occurs whenever a player sends a chat message.
 | ![Avatar2](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/2.png) | `2`
 | ![Avatar3](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/3.png) | `3`
 | ![Avatar4](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/4.png) | `4`
-| ![Avatar5](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/5.png) | `5`
 
