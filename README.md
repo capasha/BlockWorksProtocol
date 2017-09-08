@@ -57,6 +57,20 @@ This contains everyone who joined the level before you.
 | `7`  | `Float`     | Y                  | The player's Y position.
 | `..` | `..`        | `..`               | Contains more users from 0 to 7 again.
 
+### # you
+Your data when you first join the world.
+
+| Id   | Type        | Name               | Description
+| ---  | ---         | ----               | -----------
+| `0`  | `Integer`   | Player Id          | Your unique ID.
+| `1`  | `String`    | Connection Id      | Your connection ID.
+| `2`  | `String`    | Nickname           | Your nickname
+| `3`  | `Boolean`   | Has Edit           | Whether you have editing rights.
+| `4`  | `Integer`   | Avatar Id          | Your avatar ID.
+| `5`  | `Integer`   | Staff Rank         | Your staff rank.
+| `6`  | `Float`     | X                  | Your X position.
+| `7`  | `Float`     | Y                  | Your Y position.
+
 ### # avatar
 Occurs whenever a player changes their avatar.
 
