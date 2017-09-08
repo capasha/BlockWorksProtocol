@@ -165,6 +165,11 @@ Occurs whenever a player sends a chat message.
 | `1`  | `Uint`      | Block Id     | The block id. Remember it need to be Uint.
 | `..` | `...`       | Arguments    | The arguments of the block (if any).
 
+### ! "fly"
+| Id   | Type        | Name         | Description
+| ---  | ---         | ----         | -----------
+| `0`  | `Boolean`   | Flying       | Enable or Disable flying.
+
 
 
 # Misc
