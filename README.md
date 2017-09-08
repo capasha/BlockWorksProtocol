@@ -95,6 +95,19 @@ Your data when you first join the world.
 | `6`  | `Float`     | X                  | Your X position.
 | `7`  | `Float`     | Y                  | Your Y position.
 
+### # "m"
+Occurs whenever a player moves.
+
+| Id   | Type        | Name               | Description
+| ---  | ---         | ----               | -----------
+| `0`  | `Integer`   | Player ID          | The player’s unique ID.
+| `1`  | `Float`     | X                  | The player’s X position.
+| `2`  | `Float`     | Y                  | The player’s Y position.
+| `3`  | `Integer`   | Horizontal         | The horizontal component of the movement.
+| `4`  | `Integer`   | Vertical           | The vertical component of the movement.
+| `5`  | `Float`     | Speed X            | The speed in the X direction.
+| `6`  | `Float`     | Speed Y            | The speed in the Y direction.
+
 ### # "avatar"
 Occurs whenever a player changes their avatar.
 
