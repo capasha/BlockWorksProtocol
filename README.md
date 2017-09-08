@@ -102,6 +102,18 @@ Occurs whenever a player sends a chat message.
 
 # Send messages
 
+### ! "avatar"
+| Id   | Type        | Name         | Description
+| ---  | ---         | ----         | -----------
+| `0`  | `Uint`      | Avatar id    | The new Avatar Data
+
+### ! "b"
+| Id   | Type        | Name         | Description
+| ---  | ---         | ----         | -----------
+| `0`  | `Uint`      | Data         | The X, Y and channel converted to Uint.
+| `1`  | `Uint`      | Block Id     | The block id. Remember it need to be Uint.
+| `..` | `...`       | Arguments    | The arguments of the block (if any).
+
 
 
 # Misc
