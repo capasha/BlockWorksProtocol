@@ -92,12 +92,14 @@ Occurs whenever a player sends a chat message.
 | `3`  | Administrator
 
 
-### Avatar ID's
-| Id   | Type
-| ---  | ---
-| `0`  | Not done.
-| `0`  | Not done.
-| `0`  | Not done.
-| `0`  | Not done.
-| `0`  | Not done.
+### Colored Avatar ID's
+| Color | Id
+| ---   | ---
+| ![AvatarRed](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/red.png) | `0`
+| ![AvatarOrange](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/orange.png) | `1`
+| ![AvatarYellow](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/yellow.png) | `2`
+| ![AvatarGreen](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/green.png) | `3`
+| ![AvatarCyan](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/cyan.png) | `4`
+| ![AvatarBlue](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/blue.png) | `5`
+| ![AvatarPurple](https://raw.githubusercontent.com/capasha/BlockWorksProtocol/master/images/avatar/purple.png) | `6`
 
