@@ -60,6 +60,20 @@ This contains everyone who joined the level before you.
 | `7`  | `Float`     | Y                  | The player's Y position.
 | `..` | `..`        | `..`               | Contains more users from 0 to 7 again.
 
+### # "join"
+Sends when a user joins the world, and who wasn’t previously online before you joined.
+
+| Id   | Type        | Name               | Description
+| ---  | ---         | ----               | -----------
+| `0`  | `Integer`   | Player ID          | The player’s unique ID.
+| `1`  | `String`    | Connection ID      | The player’s connection ID.
+| `2`  | `String`    | Nickname           | The player's nickname.
+| `3`  | `Boolean`   | Edit Rights        | Whether the player has editing rights.
+| `4`  | `Uint`      | Avatar ID          | The customization of the avatar.
+| `5`  | `Integer`   | Staff Rank         | The staff rank ID of the player.
+| `6`  | `Float`     | X                  | The player's X position.
+| `7`  | `Float`     | Y                  | The player's Y position.
+
 ### # "you"
 Your data when you first join the world.
 
