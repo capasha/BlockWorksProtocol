@@ -2,13 +2,13 @@
 Protocol for BlockWorks that use PlayerIO's API.
 
 
-### #Game and Room Information  
+### Game and Room Information  
 ```
 ID: blockworks-frdrlhtjneoipehnx9tmg  
 Version: 1  
 RoomType: Simple-1  
 ```
-### #Rooms
+### # Rooms
 
 | Type        | Room Id
 | ----        | ---------
@@ -17,8 +17,9 @@ RoomType: Simple-1
 | Yellow      | OW_Yellow-{version}
 | Green       | OW_Green-{version}
 | Blue        | OW_Blue-{version}
+| Test World  | OW_Test-{version}
 
-### #world
+### # world
 The state of the world that is sent when you just join, the world is cleared or the level is reloaded from the database.
 
 | Id   | Type        | Name               | Description
@@ -41,13 +42,13 @@ The state of the world that is sent when you just join, the world is cleared or 
 | `..` | `String`    | SE                 | Indicates the END of signal information.
 
 
-### #online
+### # online
 This contains everyone who joined the level before you.
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
 | `0`  | `Integer`   | Player ID          | The player’s unique ID.
-| `1`  | `String`    | Account ID         | The player’s account ID.
+| `1`  | `String`    | Connection ID      | The player’s connection ID.
 | `2`  | `String`    | Nickname           | The player's nickname.
 | `3`  | `Boolean`   | Edit Rights        | Whether the player has editing rights.
 | `4`  | `Uint`      | Avatar ID          | The customization of the avatar.
@@ -56,15 +57,15 @@ This contains everyone who joined the level before you.
 | `7`  | `Float`     | Y                  | The player's Y position.
 | `..` | `..`        | `..`               | Contains more users from 0 to 7 again.
 
-### #avatar
+### # avatar
 Occurs whenever a player changes their avatar.
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
 | `0`  | `Integer`   | Player Id          | The player’s unique ID.
-| `1`  | `Integer`   | Avatar             | The player’s new Avatar data.
+| `1`  | `Integer`   | Avatar Id          | The player’s new Avatar data.
 
-### #b
+### # b
 Occurs when a player draws a block.
 
 | Id   | Type        | Name               | Description
@@ -74,13 +75,16 @@ Occurs when a player draws a block.
 | `2`  | `Integer`   | Block Id           | The placed block id.
 | `..` | `Integer`   | Arguments          | The arguments of the block.
 
-### #say
+### # say
 Occurs whenever a player sends a chat message.
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
 | `0`  | `Integer`   | Player Id          | The player’s unique ID.
 | `1`  | `String`    | Message            | The message sent from the player.
+
+
+# Misc
 
 ### Staff Rank
 | Id   | Type
