@@ -74,6 +74,13 @@ Sends when a user joins the world, and who wasn’t previously online before you
 | `6`  | `Float`     | X                  | The player's X position.
 | `7`  | `Float`     | Y                  | The player's Y position.
 
+### # "left"
+You get this message when someone leaves the room.
+
+| Id   | Type        | Name               | Description
+| ---  | ---         | ----               | -----------
+| `0`  | `Integer`   | Player ID          | The player’s unique ID.
+
 ### # "you"
 Your data when you first join the world.
 
